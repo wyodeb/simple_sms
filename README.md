@@ -31,7 +31,7 @@
     * from - string(6-16)
     * to - string(6-16)
     * text - string(1-120)
-* Annotations:
+* Notes:
   * Any unlisted params will be ignored.
   * Each listed param is thoroughly filtered as per requirements 
   * In addition to the required error messages, I added meaningful status codes, and tried to avoid unknown or unexpected errors.
