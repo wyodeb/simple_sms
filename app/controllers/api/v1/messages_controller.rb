@@ -17,16 +17,15 @@ class Api::V1::MessagesController < ApplicationController
   end
 
   private
+
   def check_if_from_present
-    unless @current_user.phone_numbers.find_by_number(param_from)&.number == param_from
-      render json: {"message":"" , "error": "from parameter not found"}, status: :not_acceptable
-    end
+    return if @current_user.phone_numbers.find_by(number: param_from)&.number == param_from
+    render json: {"message": '', "error": 'from parameter not found'}, status: :not_acceptable
   end
 
   def check_if_to_present
-    unless @current_user.phone_numbers.find_by_number(param_to)&.number == param_to
-      render json: {"message":"" , "error": "to parameter not found"}, status: :not_acceptable
-    end
+    return if @current_user.phone_numbers.find_by(number: param_to)&.number == param_to
+    render json: {"message": '', "error": 'to parameter not found'}, status: :not_acceptable
   end
 
   def cache_by_stop_text
