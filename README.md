@@ -5,7 +5,7 @@
   * on Mac: brew install memcached
 
 * Configuration:
-  * git clone git@github.com:wyodeb/simple_sms.git
+  * git clone 'git@github.com:wyodeb/simple_sms.git'
   * bundle (in project folder)
   
 * Database creation:
@@ -18,7 +18,7 @@
   * /api/v1/authentication  - expects 2 params:
     * auth_id
     * username
-    * -- This endpoint will return following an auth token for further requests.
+    > This endpoint will return following an auth token for further requests.
     Token is to be used for bearer authorizations. Token expires after 24 hours
     
   * /api/v1/inbound/sms - expects 3 params:
@@ -29,9 +29,9 @@
     * from - string(6-16)
     * to - string(6-16)
     * text - string(1-120)
-* Notes:
-  * Any unlisted params will be ignored.
-  * Each listed param is thoroughly filtered as per requirements 
-  * In addition to the required error messages, I added meaningful status codes, and tried to avoid unknown or unexpected errors.
-  * I tried to keep the code as clean as I could. 
-  * Thank you for considering my application for this role.
+> Notes:
+  Any unlisted params will be ignored.
+  Each listed param is thoroughly filtered as per requirements 
+  In addition to the required error messages, I added meaningful status codes, and tried to avoid unknown or unexpected errors.
+  I tried to keep the code as clean as I could. 
+  Thank you for considering my application for this role.
