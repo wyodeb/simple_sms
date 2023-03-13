@@ -34,6 +34,6 @@
 * Annotations:
   * Any unlisted params will be ignored.
   * Each listed param is thoroughly filtered as per requirements 
-  * In addition to required error messages I added as meaningful as possible status codes and tried to avoid unknown or unexpected errors
-  * I tried to write code as clean as my knowledge allows. 
+  * In addition to the  required error messages I added as meaningful as possible status codes and tried to avoid unknown or unexpected errors
+  * I tried to keep the code as clean as I could. 
   * Thank you for considering my application for this role.
