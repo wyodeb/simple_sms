@@ -24,7 +24,7 @@
   * /api/v1/inbound/sms - expects 3 params:
     * from - string(6-16)
     * to - string(6-16)
-    * text - string(1-2-)
+    * text - string(1-2)
   * /api/v1/outbound/sms - expects 3 params:
     * from - string(6-16)
     * to - string(6-16)
