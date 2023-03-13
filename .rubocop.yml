@@ -1,0 +1,132 @@
+require: rubocop-rails
+AllCops:
+        TargetRubyVersion: 3.2.0
+        Exclude:
+                - 'db/**/*'
+                - 'bin/*'
+                - 'config/**/*'
+                - 'lib/**/*'
+                - 'spec/**/*'
+                - 'Gemfile'
+                - 'Rakefile'
+
+Style/FrozenStringLiteralComment:
+        EnforcedStyle: never
+
+Style/Documentation:
+        Description: 'Document classes and non-namespace modules.'
+        Enabled: false
+
+Style/SymbolArray:
+        Description: 'Use %i or %I for arrays of symbols.'
+        StyleGuide: '#percent-i'
+        Enabled: false
+
+Style/WordArray:
+        Description: 'Use %w or %W for arrays of words.'
+        StyleGuide: '#percent-w'
+        Enabled: false
+
+Style/StructInheritance:
+        Description: 'Checks for inheritance from Struct.new.'
+        StyleGuide: '#no-extend-struct-new'
+        Enabled: false
+
+Layout/SpaceInsideHashLiteralBraces:
+        EnforcedStyle: no_space
+
+Style/ClassAndModuleChildren:
+        Enabled: false
+
+Naming/HeredocDelimiterNaming:
+        Enabled: false
+
+Style/DateTime:
+        Enabled: false
+
+Style/GlobalVars:
+        Enabled: false
+
+Layout/HashAlignment:
+        EnforcedColonStyle: table
+
+Layout/EmptyLineAfterGuardClause:
+        Enabled: false
+
+Style/HashEachMethods:
+        Enabled: true
+
+Style/HashTransformKeys:
+        Enabled: true
+
+Style/HashTransformValues:
+        Enabled: true
+
+Style/IfUnlessModifier:
+        Enabled: false
+
+Layout/EmptyLinesAroundAttributeAccessor:
+        Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+        Enabled: true
+
+Lint/DeprecatedOpenSSLConstant:
+        Enabled: true
+
+Lint/RaiseException:
+        Enabled: true
+
+Lint/StructNewOverride:
+        Enabled: true
+
+Style/ExponentialNotation:
+        Enabled: true
+
+Style/SlicingWithRange:
+        Enabled: true
+
+Lint/MixedRegexpCaptureTypes:
+        Enabled: true
+
+Style/RedundantRegexpCharacterClass:
+        Enabled: true
+
+Style/RedundantRegexpEscape:
+        Enabled: true
+
+Lint/DuplicateElsifCondition:
+        Enabled: true
+
+Style/AccessorGrouping:
+        Enabled: false
+
+Style/ArrayCoercion:
+        Enabled: true
+
+Style/BisectedAttrAccessor:
+        Enabled: true
+
+Style/CaseLikeIf:
+        Enabled: true
+
+Style/HashAsLastArrayItem:
+        Enabled: true
+
+Style/HashLikeCase:
+        Enabled: true
+
+Style/RedundantAssignment:
+        Enabled: true
+
+Style/RedundantFetchBlock:
+        Enabled: true
+
+Style/RedundantFileExtensionInRequire:
+        Enabled: true
+
+Lint/MissingSuper:
+        Enabled: false
+
+Metrics/ClassLength:
+        Max: 125

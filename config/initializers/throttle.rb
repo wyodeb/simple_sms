@@ -1,0 +1,2 @@
+MAX_REQUESTS = 50
+TIMING = 24.hours
